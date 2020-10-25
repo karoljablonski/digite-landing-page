@@ -9,7 +9,7 @@ body {
   font-family: sans-serif;
 }
 
-body .preupload {
+.preupload {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -19,9 +19,10 @@ body .preupload {
   -webkit-animation: loadended 1s forwards;
           animation: loadended 1s forwards;
   overflow: hidden;
+  z-index: 99;
 }
 
-body .bounce1 {
+.bounce1 {
   width: 50px;
   height: 50px;
   background-color: white;
@@ -35,7 +36,7 @@ body .bounce1 {
           animation: changesize 1s linear;
 }
 
-body .bounce2 {
+.bounce2 {
   width: 60px;
   height: 60px;
   background-color: white;
@@ -109,7 +110,8 @@ body .bounce2 {
   padding-top: 5px;
   left: 5%;
   right: 5%;
-  background-color: white;
+  background-color: transparent;
+  z-index: 10;
 }
 
 .main-nav .logo {
@@ -186,5 +188,64 @@ body .bounce2 {
 
 .scrolled {
   font-size: 50px;
+}
+
+.main-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 350px;
+  background: rgba(0, 0, 0, 0.5) url(../img/header-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+.main-header > * {
+  position: absolute;
+  width: 100%;
+}
+
+.main-header h1 {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.main-header h2 {
+  top: 62%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.main-header button.learnmore {
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 40px;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.main-header button.learnmore:active {
+  background-color: #286152;
+  border-color: #286152;
 }
 /*# sourceMappingURL=style.css.map */

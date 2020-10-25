@@ -6,7 +6,8 @@
     padding-top: 5px
     left: 5%
     right: 5%
-    background-color: white
+    background-color: transparent
+    z-index: 10
     .logo
         font-size: 28px
         letter-spacing: 2px
@@ -57,3 +58,47 @@
     display: none
 .scrolled
     font-size: 50px
+.main-header
+    position: relative
+    top: 0
+    left: 0
+    right: 0
+    height: 350px
+    background: rgba(0, 0, 0, 0.5) url(../img/header-1.jpg)
+    background-size: cover
+    background-position: center
+    background-blend-mode: darken
+    &>*
+        position: absolute
+        width: 100%
+    h1
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        color: white
+        text-transform: uppercase
+        text-align: center
+        font-size: 20px
+        font-weight: 400
+        letter-spacing: 1px
+    h2
+        top: 62%
+        left: 50%
+        transform: translate(-50%, -50%)
+        color: white
+        font-size: 16px
+        font-weight: 100
+        text-align: center
+    button.learnmore
+        top: 80%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 100px
+        height: 40px
+        text-transform: capitalize
+        background-color: transparent
+        border: 1px solid white
+        color: white
+        &:active
+            background-color: $themecolor
+            border-color: $themecolor
