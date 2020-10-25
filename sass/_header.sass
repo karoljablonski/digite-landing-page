@@ -1,0 +1,59 @@
+.main-nav
+    position: fixed
+    width: 90%
+    height: 50px
+    top: 0
+    padding-top: 5px
+    left: 5%
+    right: 5%
+    background-color: white
+    .logo
+        font-size: 28px
+        letter-spacing: 2px
+        color: $themecolor
+        text-align: left
+        margin-left: 25px
+    .burger
+        font-size: 25px
+        background-color: $themecolor
+        text-align: center
+        padding: 5px
+        width: 35px
+        line-height: 25px
+        position: absolute
+        top: 10%
+        right: 0
+        margin-right: 25px
+        color: white
+    .ul-wrapper
+        overflow: hidden
+        width: 100%
+    .main-nav-ul
+        display: flex
+        flex-direction: column
+        padding: 2px
+        background-color: $themecolor
+        position: absolute
+        width: 100%
+        top: 39px
+        left: 110%
+        transition: 0.3s ease-in
+        li
+            list-style-type: none
+            padding: 0
+            a
+                font-size: 15px
+                margin: 0
+                padding: 4px 0 4px 5px
+                display: block
+                text-transform: capitalize
+                text-decoration: none
+                color: #fff
+                &:active
+                    background-color: $themecolor
+.main-nav-ul.active-hamburger
+    left: 0
+.turned-off
+    display: none
+.scrolled
+    font-size: 50px
