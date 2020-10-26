@@ -7,6 +7,7 @@
 
 body {
   font-family: sans-serif;
+  min-height: 200vh;
 }
 
 .preupload {
@@ -103,6 +104,7 @@ body {
 }
 
 .main-nav {
+  margin-top: 20px;
   position: fixed;
   width: 90%;
   height: 50px;
@@ -200,6 +202,8 @@ body {
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
+  -webkit-animation: switch-header 8s linear infinite;
+          animation: switch-header 8s linear infinite;
 }
 
 .main-header > * {
@@ -247,5 +251,77 @@ body {
 .main-header button.learnmore:active {
   background-color: #286152;
   border-color: #286152;
+}
+
+@-webkit-keyframes switch-header {
+  0% {
+    opacity: 0;
+  }
+  7.5% {
+    background: rgba(0, 0, 0, 0.5) url(../img/header-1.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+  42.5% {
+    background: rgba(0, 0, 0, 0.5) url(../img/header-1.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  57.5% {
+    background: rgba(0, 0, 0, 0.5) url(../img/header-2.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+  92.5% {
+    background: rgba(0, 0, 0, 0.5) url(../img/header-2.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes switch-header {
+  0% {
+    opacity: 0;
+  }
+  7.5% {
+    background: rgba(0, 0, 0, 0.5) url(../img/header-1.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+  42.5% {
+    background: rgba(0, 0, 0, 0.5) url(../img/header-1.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  57.5% {
+    background: rgba(0, 0, 0, 0.5) url(../img/header-2.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+  92.5% {
+    background: rgba(0, 0, 0, 0.5) url(../img/header-2.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
