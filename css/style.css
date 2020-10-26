@@ -324,4 +324,50 @@ body {
     opacity: 0;
   }
 }
+
+.percent-bars {
+  width: 100%;
+  height: 200px;
+}
+
+.percent-bars .percent-bar {
+  width: 90%;
+  height: 80px;
+  margin: 5px auto;
+}
+
+.percent-bars .percent-bar p {
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.percent-bars .percent-bar .whole-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  position: relative;
+}
+
+.percent-bars .percent-bar .whole-bar .percent-value {
+  width: 85%;
+  height: inherit;
+  background-color: #286152;
+}
+
+.percent-bars .percent-bar .whole-bar .percent-nr {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #286152;
+  text-align: center;
+  font-size: 10px;
+  line-height: 30px;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

@@ -22,10 +22,7 @@ function changeElement(){
     h2.textContent = h2content[activeElement];
     //kod ponizej dziala!
     // img.style.background = image[activeElement];
-    //teraz czeba ogarnac jak wrzucic cover na bgSize!!
     // img.style.backgroundSize = sizeValue;
     // img.style.backgroundPosition = positionValue;
-
-    // setTimeout(changeElement, timeChange);
 };
 setInterval(changeElement, timeChange)
