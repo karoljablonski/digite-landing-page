@@ -1,52 +1,54 @@
 .main-nav
-    margin-top: 20px
     position: fixed
-    width: 90%
-    height: 50px
+    min-height: 12vh
+    height: 15vh
     top: 0
-    padding-top: 5px
-    left: 5%
-    right: 5%
-    background-color: transparent
+    left: 0
+    right: 0
+    background-color: white
     z-index: 10
     .logo
-        font-size: 28px
-        letter-spacing: 2px
+        position: absolute
+        top: 50%
+        left: 15%
+        transform: translate(0, -50%)
+        display: block
+        font-size: 35px
+        letter-spacing: 3px
         color: $themecolor
-        text-align: left
-        margin-left: 25px
     .burger
+        position: absolute
+        top: 50%
+        right: 15%
+        transform: translate(-50%, -50%)
         font-size: 25px
         background-color: $themecolor
         text-align: center
-        padding: 5px
         width: 35px
         height: 35px
-        line-height: 25px
-        position: absolute
-        top: 10%
-        right: 0
-        margin-right: 25px
+        line-height: 35px
         color: white
 
-    .ul-wrapper
-        overflow: hidden
-        width: 100%
     .main-nav-ul
         display: flex
         flex-direction: column
-        padding: 2px
+        justify-content: space-around
+        align-items: space-around
         background-color: $themecolor
         position: absolute
         width: 100%
-        top: 39px
+        top: 15vh
         left: 110%
-        transition: 0.3s ease-in
+        height: 85vh
+        transition: 0.5s ease-in
+        overflow: hidden
         li
             list-style-type: none
             padding: 0
+            text-align: center
             a
-                font-size: 15px
+                font-size: 25px
+                font-weight: ligher
                 margin: 0
                 padding: 4px 0 4px 5px
                 display: block
