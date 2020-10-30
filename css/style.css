@@ -5,6 +5,25 @@
           box-sizing: border-box;
 }
 
+h1.content-h1 {
+  font-size: 1.5rem;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #286152;
+}
+
+h2.content-h2 {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5;
+  padding: 0 1.5em 1.5em 1.5em;
+  width: 100%;
+  text-align: center;
+  color: #666;
+}
+
 body {
   font-family: sans-serif;
   min-height: 200vh;
@@ -110,8 +129,10 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.2);
   z-index: 10;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .main-nav .logo {
@@ -151,9 +172,6 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-          align-items: space-around;
   background-color: #286152;
   position: absolute;
   width: 100%;
@@ -167,23 +185,25 @@ body {
 
 .main-nav .main-nav-ul li {
   list-style-type: none;
-  padding: 0;
   text-align: center;
+  height: calc(85vh / 7);
 }
 
 .main-nav .main-nav-ul li a {
+  height: 100%;
+  line-height: calc(85vh / 7);
   font-size: 25px;
-  font-weight: ligher;
   margin: 0;
-  padding: 4px 0 4px 5px;
   display: block;
   text-transform: capitalize;
   text-decoration: none;
   color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .main-nav .main-nav-ul li a:active {
-  background-color: #286152;
+  color: #286152;
+  background-color: #fff;
 }
 
 .main-nav-ul.active-hamburger {
@@ -226,8 +246,9 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 20px;
-  font-weight: 400;
   letter-spacing: 1px;
+  font-weight: 400;
+  padding: 0 10x;
 }
 
 .main-header h2 {
@@ -239,6 +260,7 @@ body {
   font-size: 16px;
   font-weight: 100;
   text-align: center;
+  padding: 0 10px;
 }
 
 .main-header button.learnmore {
