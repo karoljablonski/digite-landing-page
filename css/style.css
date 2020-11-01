@@ -211,7 +211,7 @@ body {
 }
 
 .turned-off {
-  display: none;
+  display: none !important;
 }
 
 .scrolled {
