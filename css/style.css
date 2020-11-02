@@ -353,19 +353,38 @@ body {
   }
 }
 
+article.why-us {
+  font-size: 16px;
+  padding: 1em;
+}
+
+article.why-us > p:nth-child(3) {
+  font-weight: 500;
+  padding-bottom: 1em;
+  line-height: 1.5em;
+}
+
+article.why-us > p:nth-child(4),
+article.why-us > p:nth-child(5) {
+  font-weight: normal;
+  line-height: 1.5em;
+  padding-bottom: 1em;
+  color: #666;
+}
+
 .percent-bars {
   width: 100%;
 }
 
 .percent-bars .percent-bar {
-  width: 90%;
+  width: 75%;
   height: 80px;
   margin: 5px auto;
 }
 
 .percent-bars .percent-bar p {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: .8em;
   padding: 5px;
 }
 
@@ -377,7 +396,6 @@ body {
 }
 
 .percent-bars .percent-bar .whole-bar .percent-value {
-  width: 85%;
   height: inherit;
   background-color: #286152;
 }
@@ -388,13 +406,44 @@ body {
   border-radius: 50%;
   position: absolute;
   top: 25%;
-  left: 85%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #286152;
   text-align: center;
   font-size: 10px;
-  line-height: 30px;
+  line-height: 35px;
   color: white;
+}
+
+.firstbar .percent-value {
+  width: 85%;
+}
+
+.firstbar .percent-nr {
+  left: 85%;
+}
+
+.secondbar .percent-value {
+  width: 100%;
+}
+
+.secondbar .percent-nr {
+  left: 100%;
+}
+
+.thirdbar .percent-value {
+  width: 75%;
+}
+
+.thirdbar .percent-nr {
+  left: 75%;
+}
+
+.forthbar .percent-value {
+  width: 60%;
+}
+
+.forthbar .percent-nr {
+  left: 60%;
 }
 /*# sourceMappingURL=style.css.map */
