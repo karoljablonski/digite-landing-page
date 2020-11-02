@@ -446,4 +446,55 @@ article.why-us > p:nth-child(5) {
 .forthbar .percent-nr {
   left: 60%;
 }
+
+.our-services {
+  padding: 1em;
+}
+
+.our-services .our-service:nth-of-type(1) i,
+.our-services .our-service:nth-of-type(2) i {
+  font-size: 3em;
+}
+
+.our-services .our-service {
+  height: 120px;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.our-services .our-service i {
+  font-size: 2.5em;
+  background: -webkit-linear-gradient(#286152, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 40%;
+  margin: 5px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.our-services .our-service h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+  padding: 1em 0 .5em 1.5em;
+}
+
+.our-services .our-service p {
+  font-size: .9em;
+  color: #666;
+  line-height: 1.4;
+}
+
+.our-services .our-service i:active {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
 /*# sourceMappingURL=style.css.map */
