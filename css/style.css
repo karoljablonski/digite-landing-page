@@ -503,6 +503,8 @@ article.why-us > p:nth-child(5) {
 .our-work {
   background-color: #eee;
   overflow: hidden;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 .our-work .our-work-options {
@@ -622,5 +624,42 @@ article.why-us > p:nth-child(5) {
   }
   100% {
   }
+}
+
+section.contact-us {
+  min-height: 30vh;
+  background-color: #286152;
+  color: white;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+section.contact-us h1 {
+  text-transform: capitalize;
+  font-size: 2em;
+  padding: 1em;
+  line-height: 1.3;
+}
+
+section.contact-us p {
+  line-height: 2;
+  padding: 0 .5em .5em .5em;
+}
+
+section.contact-us button {
+  padding: 1em 1.5em;
+  font-size: 1em;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 30px;
+  margin: 0 auto 0 auto;
+}
+
+section.contact-us button:focus {
+  background-color: #fff;
+  color: #286152;
 }
 /*# sourceMappingURL=style.css.map */
