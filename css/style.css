@@ -129,7 +129,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(transparent));
+  background: linear-gradient(#fff, transparent);
   z-index: 10;
   -webkit-transition: .3s;
   transition: .3s;

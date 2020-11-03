@@ -5,8 +5,8 @@ $("span.burger").on("click", function() {
 const navigation = document.querySelector(".main-nav");
 addEventListener("scroll", function() {
     if(scrollY > 230) {
-        navigation.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+        navigation.style.background = "linear-gradient(#fff 60%, transparent)";
     } else {
-        navigation.style.backgroundColor = "rgba(255, 255, 255, 0.2)"
+        navigation.style.background = "linear-gradient(#fff, transparent)"
     };
 });
