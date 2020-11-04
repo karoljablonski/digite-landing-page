@@ -1,0 +1,98 @@
+.stuff-container {
+    width: 90%;
+    margin: 20px auto 0;
+
+    .single-employee {
+        margin: 0 auto 40px;
+        height: 60vh;
+        width: 90%;
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url(/img/ourteam-1.jpg);
+        background-size: cover;
+        position: relative;
+
+        &:nth-child(2) {
+            background-image: url(/img/ourteam-2.jpg);
+        }
+
+        &:nth-child(3) {
+            background-image: url(/img/ourteam-3.jpg);
+        }
+
+        &:nth-child(4) {
+            background-image: url(/img/ourteam-4.jpg);
+        }
+
+        .emp-name {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 70px;
+            background-color: $themecolor;
+            text-align: center;
+            line-height: 70px;
+            font-size: 1.1em;
+            color: white;
+            transition: 0.4s;
+
+            // &:hover {
+            //     height: 120px;
+            // }
+        }
+
+
+
+        .emp-position {
+            display: none;
+            transition: 0.4s;
+        }
+
+        .emp-position-active {
+            color: white;
+            z-index: 1;
+            text-align: center;
+            font-size: 0.9em;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 45px;
+            transition: .4s;
+        }
+
+        .emp-socials {
+            display: none;
+            transition: 0.4s;
+        }
+
+        .emp-socials-active {
+            position: absolute;
+            left: 25%;
+            right: 25%;
+            bottom: -20px;
+            height: 40px;
+            // background-color: blue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            transition: .4s;
+
+            .emp-social {
+                display: block;
+                // padding: 2px;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                line-height: 35px;
+                font-size: 20px;
+                border-radius: 50%;
+                background-color: white;
+                color: $themecolor;
+                border: .1px solid $themecolor;
+            }
+        }
+    }
+}

@@ -654,4 +654,112 @@ section.contact-us button:focus {
   background-color: #fff;
   color: #286152;
 }
+
+.stuff-container {
+  width: 90%;
+  margin: 20px auto 0;
+}
+
+.stuff-container .single-employee {
+  margin: 0 auto 40px;
+  height: 60vh;
+  width: 90%;
+  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-image: url(/img/ourteam-1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.stuff-container .single-employee:nth-child(2) {
+  background-image: url(/img/ourteam-2.jpg);
+}
+
+.stuff-container .single-employee:nth-child(3) {
+  background-image: url(/img/ourteam-3.jpg);
+}
+
+.stuff-container .single-employee:nth-child(4) {
+  background-image: url(/img/ourteam-4.jpg);
+}
+
+.stuff-container .single-employee .emp-name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 70px;
+  background-color: #286152;
+  text-align: center;
+  line-height: 70px;
+  font-size: 1.1em;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.stuff-container .single-employee .emp-position {
+  display: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.stuff-container .single-employee .emp-position-active {
+  color: white;
+  z-index: 1;
+  text-align: center;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 45px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.stuff-container .single-employee .emp-socials {
+  display: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.stuff-container .single-employee .emp-socials-active {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: -20px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.stuff-container .single-employee .emp-socials-active .emp-social {
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: white;
+  color: #286152;
+  border: 0.1px solid #286152;
+}
 /*# sourceMappingURL=style.css.map */
