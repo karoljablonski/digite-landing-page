@@ -33,9 +33,11 @@
             margin: 20px auto
             position: relative
             background-color: transparent
-
+            &>*
+                transition: 1s
             img
                 width: 100%
+                display: block
 
             button
                 position: absolute
@@ -83,7 +85,11 @@
                 z-index: 1
                 border: 3px solid $themecolor
                 transform: skew(35deg)
-@keyframes focusing
-    0%
-
-    100%
+// .bright
+//     filter: brightness(50%)
+// .opacities
+//     opacity: 1 !important
+// .left0
+//     left: 0 !important
+// .left130
+//     left: -130% !important

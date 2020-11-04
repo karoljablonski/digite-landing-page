@@ -552,8 +552,14 @@ article.why-us > p:nth-child(5) {
   background-color: transparent;
 }
 
+.our-work .our-work-img-container .our-work-single-img > * {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .our-work .our-work-img-container .our-work-single-img img {
   width: 100%;
+  display: block;
 }
 
 .our-work .our-work-img-container .our-work-single-img button {
@@ -610,20 +616,6 @@ article.why-us > p:nth-child(5) {
   border: 3px solid #286152;
   -webkit-transform: skew(35deg);
           transform: skew(35deg);
-}
-
-@-webkit-keyframes focusing {
-  0% {
-  }
-  100% {
-  }
-}
-
-@keyframes focusing {
-  0% {
-  }
-  100% {
-  }
 }
 
 section.contact-us {
