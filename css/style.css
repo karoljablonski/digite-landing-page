@@ -762,4 +762,26 @@ section.contact-us button:focus {
   color: #286152;
   border: 0.1px solid #286152;
 }
+
+.client-logos {
+  height: 30vh;
+  background-color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client-logos .logos-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.client-logos .logos-wrapper .client-logo {
+  margin: 0 15px;
+  background-size: cover;
+}
 /*# sourceMappingURL=style.css.map */
