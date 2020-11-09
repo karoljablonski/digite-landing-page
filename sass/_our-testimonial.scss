@@ -1,0 +1,62 @@
+.our-testimonial {
+    // height: 70vh; //do wywalenia!
+    background-color: #eee;
+    padding-bottom: 50px;
+
+    .references-wrapper {
+        // height: 200vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .single-refer {
+            width: 70%;
+            position: relative;
+            top: auto;
+            left: auto;
+            background-color: #fff;
+            border-top: 2px solid $themecolor;
+            margin: 50px auto;
+            padding: 10px;
+
+            .text-refer {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 1em;
+                line-height: 150%;
+                color: #666;
+                padding: 10px;
+
+            }
+
+            .client-name {
+                width: 90%;
+                margin: 0 auto;
+                text-transform: uppercase;
+                color: $themecolor;
+                letter-spacing: 1px;
+                font-weight: bolder;
+                padding: 10px;
+            }
+
+            .client-position {
+                width: 90%;
+                margin: 0 auto;
+                font-size: .9em;
+                color: #666;
+                padding: 0 10px 25px;
+                text-transform: capitalize;
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                position: absolute;
+                bottom: -30px;
+                right: 15px;
+            }
+        }
+    }
+}

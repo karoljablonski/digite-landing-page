@@ -12,6 +12,7 @@ h1.content-h1 {
   text-align: center;
   text-transform: capitalize;
   color: #286152;
+  margin-top: 30px;
 }
 
 h2.content-h2 {
@@ -984,5 +985,71 @@ section.contact-us button:focus {
 .our-records .records-wrapper .record span.record-desc {
   font-size: 1em;
   color: white;
+}
+
+.our-testimonial {
+  background-color: #eee;
+  padding-bottom: 50px;
+}
+
+.our-testimonial .references-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-testimonial .references-wrapper .single-refer {
+  width: 70%;
+  position: relative;
+  top: auto;
+  left: auto;
+  background-color: #fff;
+  border-top: 2px solid #286152;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.our-testimonial .references-wrapper .single-refer .text-refer {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 150%;
+  color: #666;
+  padding: 10px;
+}
+
+.our-testimonial .references-wrapper .single-refer .client-name {
+  width: 90%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #286152;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.our-testimonial .references-wrapper .single-refer .client-position {
+  width: 90%;
+  margin: 0 auto;
+  font-size: .9em;
+  color: #666;
+  padding: 0 10px 25px;
+  text-transform: capitalize;
+}
+
+.our-testimonial .references-wrapper .single-refer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30px;
+  right: 15px;
 }
 /*# sourceMappingURL=style.css.map */
