@@ -20,11 +20,11 @@
 
             .decoration-line {
                 position: absolute;
-                width: 90%;
+                width: 80%;
                 height: 4px;
                 background-color: $themecolor;
                 top: -4px;
-                left: 5%;
+                left: 10%;
             }
 
             .offer-name {
@@ -32,7 +32,7 @@
                 text-transform: uppercase;
                 font-weight: 900;
                 padding: 20px;
-                color: #222;
+                color: #333;
             }
 
             .offer-desc {
@@ -46,13 +46,13 @@
                 letter-spacing: 3px;
                 padding: 10px;
                 padding-bottom: 20px;
-                color: #222;
+                color: #333;
 
                 span {
                     font-weight: bolder;
                     font-size: .5em;
                     letter-spacing: normal;
-                    color: #222;
+                    color: #333;
                 }
             }
 
@@ -88,7 +88,8 @@
 
                         span {
                             font-weight: 900;
-                            color: #222;
+                            color: #333;
+                            padding: 0 2px;
                         }
                     }
 
@@ -101,7 +102,6 @@
                 li:last-child {
                     border-bottom: 1px solid #ddd;
                 }
-
 
             }
 
