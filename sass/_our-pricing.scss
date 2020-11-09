@@ -1,0 +1,126 @@
+.our-pricing {
+    // background-color: #eee;
+
+    .offers-container {
+        // background-color: #ddd;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .offer {
+            margin: 50px 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            .decoration-line {
+                position: absolute;
+                width: 90%;
+                height: 4px;
+                background-color: $themecolor;
+                top: -4px;
+                left: 5%;
+            }
+
+            .offer-name {
+                font-size: 1.3em;
+                text-transform: uppercase;
+                font-weight: 900;
+                padding: 20px;
+                color: #222;
+            }
+
+            .offer-desc {
+                font-size: 1em;
+                color: #888;
+                padding: 10px 20px;
+            }
+
+            .offer-price {
+                font-size: 3em;
+                letter-spacing: 3px;
+                padding: 10px;
+                padding-bottom: 20px;
+                color: #222;
+
+                span {
+                    font-weight: bolder;
+                    font-size: .5em;
+                    letter-spacing: normal;
+                    color: #222;
+                }
+            }
+
+            ul.offer-features {
+                min-height: 150px; //wartosc tymczasowa!!!
+                display: flex;
+                flex-direction: column;
+                justify-content: stretch;
+                align-items: center;
+                width: 100%;
+
+
+
+                li {
+                    width: 100%;
+                    list-style: none;
+                    border-top: 1px solid #ddd;
+                    text-align: center;
+                    color: #555;
+
+                    p {
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        font-size: .9em;
+                        padding: 10px 5px;
+                        transition: .3s;
+
+                        &:hover {
+                            left: 10px
+                        }
+
+                        span {
+                            font-weight: 900;
+                            color: #222;
+                        }
+                    }
+
+                    i {
+                        color: $themecolor;
+                    }
+
+                }
+
+                li:last-child {
+                    border-bottom: 1px solid #ddd;
+                }
+
+
+            }
+
+            .confirm-offer {
+                // background-color: red;
+                margin: 20px 0;
+                padding: 15px 30px;
+                border-radius: 30px;
+                text-transform: capitalize;
+                background-color: #fff;
+                border: 1px solid $themecolor;
+                color: $themecolor;
+                font-weight: 100;
+
+                &:hover {
+                    background-color: $themecolor;
+                    color: white;
+                }
+            }
+        }
+    }
+}
