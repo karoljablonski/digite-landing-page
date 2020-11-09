@@ -990,6 +990,7 @@ section.contact-us button:focus {
 .our-testimonial {
   background-color: #eee;
   padding-bottom: 50px;
+  padding-top: 10px;
 }
 
 .our-testimonial .references-wrapper {
@@ -1050,6 +1051,88 @@ section.contact-us button:focus {
   border-radius: 50%;
   position: absolute;
   bottom: -30px;
-  right: 15px;
+  right: 25px;
+}
+
+.latest-blog {
+  background-color: #fff;
+}
+
+.latest-blog .blogs-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.latest-blog .blogs-wrapper .blog {
+  position: relative;
+  width: 300px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.latest-blog .blogs-wrapper .blog img {
+  width: 300px;
+}
+
+.latest-blog .blogs-wrapper .blog button {
+  display: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #286152;
+  text-align: center;
+  line-height: 20px;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+.latest-blog .blogs-wrapper .blog .blog-info {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 220px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 2px 2px 2px #ddd, -2px 2px 3px #ddd;
+          box-shadow: 2px 2px 2px #ddd, -2px 2px 3px #ddd;
+}
+
+.latest-blog .blogs-wrapper .blog .blog-info .blog-title {
+  font-size: 1.2em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.latest-blog .blogs-wrapper .blog .blog-info .blog-details {
+  color: #666666;
+  text-transform: uppercase;
+}
+
+.latest-blog .blogs-wrapper .blog .blog-info .blog-intro {
+  border-top: 1px solid #286152;
+  padding-top: 15px;
+  color: #666;
+  line-height: 1.2em;
+}
+
+.latest-blog .blogs-wrapper .blog .blog-info i {
+  color: #286152;
 }
 /*# sourceMappingURL=style.css.map */

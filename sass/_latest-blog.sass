@@ -1,0 +1,55 @@
+.latest-blog
+    background-color: #fff
+    .blogs-wrapper
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        // background-color: #eee
+        .blog
+            position: relative
+            width: 300px
+            background-color: white
+            // padding: 10px
+            margin-bottom: 30px //do wywalenia
+            img
+                width: 300px
+
+            button
+                display: none
+                height: 20px
+                width: 20px
+                border-radius: 50%
+                background-color: $themecolor
+                text-align: center
+                line-height: 20px
+                border: none
+                color: white
+                position: absolute
+                top: 30%
+                left: 50%
+            .blog-info
+                padding: 10px
+                // background-color: rgba(0, 0, 0, 0.5)
+                display: flex
+                flex-direction: column
+                height: 220px
+                justify-content: space-around
+                box-shadow: 2px 2px 2px #ddd, -2px 2px 3px #ddd
+                // align-items: center
+                .blog-title
+                    font-size: 1.2em
+                    text-transform: capitalize
+                    letter-spacing: 1px
+                    font-weight: bold
+
+                .blog-details
+                    color: #666666
+                    text-transform: uppercase
+                .blog-intro
+                    border-top: 1px solid $themecolor
+                    padding-top: 15px
+                    color: #666
+                    line-height: 1.2em
+                i
+                    color: $themecolor
