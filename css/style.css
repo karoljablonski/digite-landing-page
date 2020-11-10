@@ -1156,15 +1156,48 @@ section.contact-us button:focus {
   padding: 0 .5em .5em .5em;
 }
 
-.newsletter input {
-  padding: 1em 1.5em;
+.newsletter input,
+.newsletter button {
+  padding: .5em 1em;
   font-size: 1em;
   letter-spacing: 1px;
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  text-transform: capitalize;
-  border-radius: 30px;
-  margin: 0 auto 0 auto;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.newsletter input {
+  width: 70%;
+}
+
+.newsletter input::-webkit-input-placeholder {
+  color: white;
+}
+
+.newsletter input:-ms-input-placeholder {
+  color: white;
+}
+
+.newsletter input::-ms-input-placeholder {
+  color: white;
+}
+
+.newsletter input::placeholder {
+  color: white;
+}
+
+.newsletter button.sub {
+  padding: .5em 1em;
+  display: block;
+  margin: 20px auto 0;
+  background-color: #fff;
+  color: #286152;
+}
+
+.newsletter button.sub:hover, .newsletter button.sub:focus {
+  background-color: #286152;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
