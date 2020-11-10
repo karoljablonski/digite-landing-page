@@ -10,20 +10,20 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        background-image: url(/img/ourteam-1.jpg);
+        background-image: url(../img/ourteam-1.jpg);
         background-size: cover;
         position: relative;
 
         &:nth-child(2) {
-            background-image: url(/img/ourteam-2.jpg);
+            background-image: url(../img/ourteam-2.jpg);
         }
 
         &:nth-child(3) {
-            background-image: url(/img/ourteam-3.jpg);
+            background-image: url(../img/ourteam-3.jpg);
         }
 
         &:nth-child(4) {
-            background-image: url(/img/ourteam-4.jpg);
+            background-image: url(../img/ourteam-4.jpg);
         }
 
         .emp-name {

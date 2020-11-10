@@ -676,21 +676,21 @@ section.contact-us button:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-image: url(/img/ourteam-1.jpg);
+  background-image: url(../img/ourteam-1.jpg);
   background-size: cover;
   position: relative;
 }
 
 .stuff-container .single-employee:nth-child(2) {
-  background-image: url(/img/ourteam-2.jpg);
+  background-image: url(../img/ourteam-2.jpg);
 }
 
 .stuff-container .single-employee:nth-child(3) {
-  background-image: url(/img/ourteam-3.jpg);
+  background-image: url(../img/ourteam-3.jpg);
 }
 
 .stuff-container .single-employee:nth-child(4) {
-  background-image: url(/img/ourteam-4.jpg);
+  background-image: url(../img/ourteam-4.jpg);
 }
 
 .stuff-container .single-employee .emp-name {
@@ -1134,5 +1134,37 @@ section.contact-us button:focus {
 
 .latest-blog .blogs-wrapper .blog .blog-info i {
   color: #286152;
+}
+
+.newsletter {
+  min-height: 30vh;
+  background-color: #286152;
+  color: white;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.newsletter h1 {
+  text-transform: capitalize;
+  font-size: 2em;
+  padding: 1em;
+  line-height: 1.3;
+}
+
+.newsletter p {
+  line-height: 2;
+  padding: 0 .5em .5em .5em;
+}
+
+.newsletter input {
+  padding: 1em 1.5em;
+  font-size: 1em;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 30px;
+  margin: 0 auto 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
