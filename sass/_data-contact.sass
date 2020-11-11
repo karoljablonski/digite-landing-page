@@ -1,0 +1,54 @@
+.data-contact
+    display: flex
+    flex-wrap: wrap
+    // background-color: #777
+    .contact-form
+        // background-color: #999
+        display: flex
+        flex-wrap: wrap
+        align-content: center
+        justify-content: center
+        align-items: center
+        // flex-shrink: 1
+        input
+            width: 90%
+            margin: 10px 0
+            border: none
+            border-bottom: 1px solid #aaaaaa
+            padding: .7em
+            // margin: 0.5em
+            &::placeholder
+                font-size: 1.1em
+                padding-bottom: 0.7em
+            &:nth-last-of-type(1)
+                padding-bottom: 50px
+        .send-msg
+            padding: 1.2em 2em
+            border: 1px solid $themecolor
+            background-color: #fff
+            color: $themecolor
+            letter-spacing: 1px
+            border-radius: 35px
+            margin: 10px
+            transition: 0.5s
+            &:hover, &:focus
+                color: #ffffff
+                background-color: $themecolor
+    .contact-info
+        background-color: #999
+        // display: flex
+        // flex-wrap: wrap
+        // justify-content: space-around
+        p
+            width: 40%
+            display: flex
+            // margin: 0 auto
+            // flex-shrink: 1
+        span
+            // display: block
+            flex-basis: 100px
+            i
+                display: block
+                color: $themecolor
+                font-size: 2em
+                // flex-basis: 100px
