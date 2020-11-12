@@ -35,20 +35,29 @@
                 color: #ffffff
                 background-color: $themecolor
     .contact-info
-        background-color: #999
-        // display: flex
-        // flex-wrap: wrap
-        // justify-content: space-around
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: stretch
         p
-            width: 40%
+            margin: 10px 0
             display: flex
-            // margin: 0 auto
-            // flex-shrink: 1
-        span
-            // display: block
-            flex-basis: 100px
-            i
-                display: block
-                color: $themecolor
-                font-size: 2em
-                // flex-basis: 100px
+            justify-content: space-between
+
+            span:nth-child(1)
+                // background-color: red
+                padding: 10px
+                // padding-left: 50px
+                flex-basis: 100px
+                text-align: right
+                // flex-grow: 4
+                i
+                    font-size: 2em
+                    color: $themecolor
+
+            span:nth-child(2)
+                flex-basis: 300px
+                text-align: center
+                padding: 10px
+                color: #666

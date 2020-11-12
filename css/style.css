@@ -1281,24 +1281,48 @@ section.contact-us button:focus {
 }
 
 .data-contact .contact-info {
-  background-color: #999;
-}
-
-.data-contact .contact-info p {
-  width: 40%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
-.data-contact .contact-info span {
+.data-contact .contact-info p {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.data-contact .contact-info p span:nth-child(1) {
+  padding: 10px;
   -ms-flex-preferred-size: 100px;
       flex-basis: 100px;
+  text-align: right;
 }
 
-.data-contact .contact-info span i {
-  display: block;
-  color: #286152;
+.data-contact .contact-info p span:nth-child(1) i {
   font-size: 2em;
+  color: #286152;
+}
+
+.data-contact .contact-info p span:nth-child(2) {
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  text-align: center;
+  padding: 10px;
+  color: #666;
 }
 /*# sourceMappingURL=style.css.map */
