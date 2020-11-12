@@ -26,6 +26,11 @@
             width: 40%;
             margin: 5px;
             transition: 0.7s;
+
+            &:active {
+                transform: rotateX(360deg);
+                // transform-origin: 50%;
+            }
         }
 
         h3 {
@@ -44,13 +49,18 @@
     }
 }
 
-.our-services {
+@media (orientation: landscape) {
+
+    .our-services {
+        .our-service {
+            i {
+                padding-left: 70px;
+            }
 
 
-    .our-service {
-        i:active {
-            transform: rotateX(360deg);
-            // transform-origin: 50%;
+            p {
+                padding-right: 70px;
+            }
         }
     }
 }
