@@ -1,0 +1,40 @@
+footer {
+    height: 30vh;
+
+    div {
+        height: 50%;
+        position: relative;
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translate(0, -50%);
+            font-size: 1.2em;
+            text-align: center;
+            padding: 5px;
+            color: #666
+        }
+
+        .media-wrap {
+            top: 25%;
+            left: 0;
+        }
+
+        span {
+            display: inline-block;
+            color: $themecolor;
+            font-size: 2em;
+            padding: 0 5px;
+            transition: .7s ease-in-out;
+
+            &:hover,
+            &:focus {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+
+}
