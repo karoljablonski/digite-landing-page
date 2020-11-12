@@ -1213,6 +1213,7 @@ section.contact-us button:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .data-contact .contact-form {
@@ -1325,6 +1326,16 @@ section.contact-us button:focus {
   text-align: center;
   padding: 10px;
   color: #666;
+}
+
+.google-maps {
+  height: 50vh;
+  width: 100%;
+}
+
+.google-maps iframe {
+  height: 100%;
+  width: 100%;
 }
 
 footer {
