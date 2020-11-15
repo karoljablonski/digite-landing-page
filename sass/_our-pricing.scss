@@ -82,7 +82,8 @@
                         padding: 10px 5px;
                         transition: .3s;
 
-                        &:hover {
+                        &:hover,
+                        &:focus {
                             left: 10px
                         }
 

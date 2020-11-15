@@ -1,6 +1,9 @@
 .stuff-container {
     width: 90%;
     margin: 20px auto 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     .single-employee {
         margin: 0 auto 40px;
@@ -93,6 +96,18 @@
                 color: $themecolor;
                 border: .1px solid $themecolor;
             }
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    .stuff-container {
+        width: 95%;
+
+        .single-employee {
+            width: 48%;
+            height: 80vh;
+            margin: 0 auto 40px;
         }
     }
 }

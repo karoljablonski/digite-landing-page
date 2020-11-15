@@ -13,7 +13,7 @@
             // padding: 10px
             margin-bottom: 30px //do wywalenia
             img
-                width: 300px
+                width: 100%
 
             button
                 display: none
@@ -53,3 +53,21 @@
                     line-height: 1.2em
                 i
                     color: $themecolor
+@media (orientation: landscape)
+    .latest-blog
+        .blogs-wrapper
+            .blog
+                width: 40%
+                img
+                    width: 100%
+                .blog-info
+                    height: 150px
+                    .blog-title
+                        font-size: 90%
+                    .blog-details
+                        flex-grow: 1
+                        padding-top: 10px
+                    &>*
+                        font-size: 90%
+                    .blog-intro
+                        padding-top: 10px

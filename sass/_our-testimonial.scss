@@ -13,6 +13,7 @@
 
         .single-refer {
             width: 70%;
+            min-height: 50vh;
             position: relative;
             top: auto;
             left: auto;
@@ -20,6 +21,8 @@
             border-top: 2px solid $themecolor;
             margin: 50px auto;
             padding: 10px;
+            display: flex;
+            flex-direction: column;
 
             .text-refer {
                 width: 90%;
@@ -28,7 +31,7 @@
                 line-height: 150%;
                 color: #666;
                 padding: 10px;
-
+                flex-grow: 1;
             }
 
             .client-name {
@@ -39,6 +42,7 @@
                 letter-spacing: 1px;
                 font-weight: bolder;
                 padding: 10px;
+                // flex-grow: 1;
             }
 
             .client-position {
@@ -48,6 +52,7 @@
                 color: #666;
                 padding: 0 10px 25px;
                 text-transform: capitalize;
+                // flex-grow: 1;
             }
 
             img {
@@ -57,6 +62,27 @@
                 position: absolute;
                 bottom: -30px;
                 right: 25px;
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    .our-testimonial {
+        .references-wrapper {
+            width: 90%;
+            margin: 0 auto;
+            align-items: space-around;
+            align-content: center;
+
+            .single-refer {
+                width: 48%;
+                min-height: 72vh;
+                margin: 40px 0;
+
+                .text-refer {
+                    font-size: 90%;
+                }
             }
         }
     }

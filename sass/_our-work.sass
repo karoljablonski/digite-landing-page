@@ -5,7 +5,7 @@
     padding-top: 30px
     .our-work-options
         margin: 0 auto
-        width: 90%
+        width: 95%
         ul
             min-height: 15vh
             display: flex
@@ -15,6 +15,7 @@
 
             li
                 list-style: none
+                padding: 5px
 
                 a
                     display: block
@@ -27,6 +28,11 @@
     .our-work-img-container
         width: 95%
         margin: 0 auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: center
+        align-content: space-around
         .our-work-single-img
             overflow: hidden
             width: 90%
@@ -93,3 +99,10 @@
 //     left: 0 !important
 // .left130
 //     left: -130% !important
+@media (orientation: landscape)
+    .our-work
+        .our-work-options
+            width: 60%
+        .our-work-img-container
+            .our-work-single-img
+                width: 48%

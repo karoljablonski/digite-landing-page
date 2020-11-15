@@ -393,6 +393,7 @@ article.why-us > p:nth-child(3) {
   font-weight: 500;
   padding-bottom: 1em;
   line-height: 1.5em;
+  color: #666;
 }
 
 article.why-us > p:nth-child(4),
@@ -401,6 +402,12 @@ article.why-us > p:nth-child(5) {
   line-height: 1.5em;
   padding-bottom: 1em;
   color: #666;
+}
+
+@media (orientation: landscape) {
+  article.why-us p {
+    font-size: .9em;
+  }
 }
 
 .percent-bars {
@@ -502,7 +509,7 @@ article.why-us > p:nth-child(5) {
 
 .our-services .our-service i {
   font-size: 2.5em;
-  background: -webkit-linear-gradient(#286152, red);
+  background: -webkit-linear-gradient(#286152, #c5ac1f);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -531,8 +538,13 @@ article.why-us > p:nth-child(5) {
 }
 
 @media (orientation: landscape) {
+  .our-services .our-service:nth-of-type(1) i,
+  .our-services .our-service:nth-of-type(2) i {
+    font-size: 2.5em;
+  }
   .our-services .our-service i {
     padding-left: 70px;
+    font-size: 2em;
   }
   .our-services .our-service p {
     padding-right: 70px;
@@ -548,7 +560,7 @@ article.why-us > p:nth-child(5) {
 
 .our-work .our-work-options {
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
 }
 
 .our-work .our-work-options ul {
@@ -566,6 +578,7 @@ article.why-us > p:nth-child(5) {
 
 .our-work .our-work-options ul li {
   list-style: none;
+  padding: 5px;
 }
 
 .our-work .our-work-options ul li a {
@@ -581,6 +594,18 @@ article.why-us > p:nth-child(5) {
 .our-work .our-work-img-container {
   width: 95%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 .our-work .our-work-img-container .our-work-single-img {
@@ -657,6 +682,15 @@ article.why-us > p:nth-child(5) {
           transform: skew(35deg);
 }
 
+@media (orientation: landscape) {
+  .our-work .our-work-options {
+    width: 60%;
+  }
+  .our-work .our-work-img-container .our-work-single-img {
+    width: 48%;
+  }
+}
+
 section.contact-us {
   min-height: 30vh;
   background-color: #286152;
@@ -697,6 +731,13 @@ section.contact-us button:focus {
 .stuff-container {
   width: 90%;
   margin: 20px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .stuff-container .single-employee {
@@ -802,6 +843,17 @@ section.contact-us button:focus {
   border: 0.1px solid #286152;
 }
 
+@media (orientation: landscape) {
+  .stuff-container {
+    width: 95%;
+  }
+  .stuff-container .single-employee {
+    width: 48%;
+    height: 80vh;
+    margin: 0 auto 40px;
+  }
+}
+
 .client-logos {
   height: 30vh;
   background-color: #ccc;
@@ -817,12 +869,21 @@ section.contact-us button:focus {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow-x: hidden;
 }
 
 .client-logos .logos-wrapper .client-logo {
   margin: 0 35px;
   background-size: cover;
+}
+
+@media (orientation: landscape) {
+  .client-logos {
+    height: 40vh;
+  }
 }
 
 .our-pricing .offers-container {
@@ -931,7 +992,7 @@ section.contact-us button:focus {
   transition: .3s;
 }
 
-.our-pricing .offers-container .offer ul.offer-features li p:hover {
+.our-pricing .offers-container .offer ul.offer-features li p:hover, .our-pricing .offers-container .offer ul.offer-features li p:focus {
   left: 10px;
 }
 
@@ -1007,7 +1068,7 @@ section.contact-us button:focus {
 }
 
 .our-records .records-wrapper .record i {
-  background: -webkit-linear-gradient(#286152 30%, red);
+  background: -webkit-linear-gradient(#286152 30%, #c5ac1f);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1022,6 +1083,29 @@ section.contact-us button:focus {
 .our-records .records-wrapper .record span.record-desc {
   font-size: 1em;
   color: white;
+}
+
+@media (orientation: landscape) {
+  .our-records {
+    height: 80vh;
+  }
+  .our-records .records-wrapper {
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .our-records .records-wrapper .record {
+    width: 25%;
+    height: 35%;
+  }
+  .our-records .records-wrapper .record i {
+    font-size: 300%;
+  }
+  .our-records .records-wrapper .record span.record-number {
+    font-size: 1.5rem;
+  }
+  .our-records .records-wrapper .record span.record-desc {
+    font-size: .9rem;
+  }
 }
 
 .our-testimonial {
@@ -1045,6 +1129,7 @@ section.contact-us button:focus {
 
 .our-testimonial .references-wrapper .single-refer {
   width: 70%;
+  min-height: 50vh;
   position: relative;
   top: auto;
   left: auto;
@@ -1052,6 +1137,13 @@ section.contact-us button:focus {
   border-top: 2px solid #286152;
   margin: 50px auto;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .our-testimonial .references-wrapper .single-refer .text-refer {
@@ -1061,6 +1153,9 @@ section.contact-us button:focus {
   line-height: 150%;
   color: #666;
   padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .our-testimonial .references-wrapper .single-refer .client-name {
@@ -1091,6 +1186,26 @@ section.contact-us button:focus {
   right: 25px;
 }
 
+@media (orientation: landscape) {
+  .our-testimonial .references-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .our-testimonial .references-wrapper .single-refer {
+    width: 48%;
+    min-height: 72vh;
+    margin: 40px 0;
+  }
+  .our-testimonial .references-wrapper .single-refer .text-refer {
+    font-size: 90%;
+  }
+}
+
 .latest-blog {
   background-color: #fff;
 }
@@ -1116,7 +1231,7 @@ section.contact-us button:focus {
 }
 
 .latest-blog .blogs-wrapper .blog img {
-  width: 300px;
+  width: 100%;
 }
 
 .latest-blog .blogs-wrapper .blog button {
@@ -1173,6 +1288,33 @@ section.contact-us button:focus {
   color: #286152;
 }
 
+@media (orientation: landscape) {
+  .latest-blog .blogs-wrapper .blog {
+    width: 40%;
+  }
+  .latest-blog .blogs-wrapper .blog img {
+    width: 100%;
+  }
+  .latest-blog .blogs-wrapper .blog .blog-info {
+    height: 150px;
+  }
+  .latest-blog .blogs-wrapper .blog .blog-info .blog-title {
+    font-size: 90%;
+  }
+  .latest-blog .blogs-wrapper .blog .blog-info .blog-details {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-top: 10px;
+  }
+  .latest-blog .blogs-wrapper .blog .blog-info > * {
+    font-size: 90%;
+  }
+  .latest-blog .blogs-wrapper .blog .blog-info .blog-intro {
+    padding-top: 10px;
+  }
+}
+
 .newsletter {
   min-height: 30vh;
   background-color: #286152;
@@ -1184,6 +1326,7 @@ section.contact-us button:focus {
 .newsletter h1 {
   text-transform: capitalize;
   font-size: 2em;
+  text-align: center;
   padding: 1em;
   padding-bottom: .5em;
   line-height: 1.3;
@@ -1191,50 +1334,48 @@ section.contact-us button:focus {
 
 .newsletter p {
   line-height: 1.5;
-  padding: 0 .5em 1em .5em;
+  padding: 0 1em 1em;
 }
 
-.newsletter input,
-.newsletter button {
+.newsletter input {
   padding: .5em 1em;
   font-size: 1em;
-  letter-spacing: 1px;
   background-color: transparent;
   border: 2px solid white;
   color: white;
   -webkit-transition: .1s;
   transition: .1s;
-}
-
-.newsletter input {
+  margin-top: 20px;
   border-radius: 0;
-  width: 70%;
+  width: 85%;
 }
 
 .newsletter input::-webkit-input-placeholder {
   color: white;
-  text-align: center;
 }
 
 .newsletter input:-ms-input-placeholder {
   color: white;
-  text-align: center;
 }
 
 .newsletter input::-ms-input-placeholder {
   color: white;
-  text-align: center;
 }
 
 .newsletter input::placeholder {
   color: white;
-  text-align: center;
 }
 
 .newsletter button.sub {
+  font-size: 1em;
+  letter-spacing: 1px;
+  border: 2px solid #286152;
+  -webkit-transition: .1s;
+  transition: .1s;
   padding: .5em 1em;
+  width: 30%;
   display: block;
-  margin: 20px auto 0;
+  margin: 30px auto 0;
   background-color: #fff;
   color: #286152;
 }
@@ -1242,6 +1383,12 @@ section.contact-us button:focus {
 .newsletter button.sub:hover, .newsletter button.sub:focus {
   background-color: #286152;
   color: white;
+}
+
+@media (orientation: landscape) {
+  .newsletter button.sub {
+    width: 20%;
+  }
 }
 
 .data-contact {
@@ -1254,6 +1401,7 @@ section.contact-us button:focus {
 }
 
 .data-contact .contact-form {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1319,8 +1467,8 @@ section.contact-us button:focus {
 }
 
 .data-contact .contact-info {
-  margin-top: 40px;
-  width: 100%;
+  margin: 40px auto 0;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1343,12 +1491,13 @@ section.contact-us button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .data-contact .contact-info p span:nth-child(1) {
   padding: 10px;
-  -ms-flex-preferred-size: 100px;
-      flex-basis: 100px;
   text-align: right;
 }
 
@@ -1358,11 +1507,22 @@ section.contact-us button:focus {
 }
 
 .data-contact .contact-info p span:nth-child(2) {
-  -ms-flex-preferred-size: 300px;
-      flex-basis: 300px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: center;
   padding: 10px;
   color: #666;
+}
+
+@media (orientation: landscape) {
+  .data-contact .contact-info {
+    width: 90%;
+  }
+  .data-contact .contact-info p span:nth-child(1) {
+    -ms-flex-preferred-size: 120px;
+        flex-basis: 120px;
+  }
 }
 
 .google-maps {
