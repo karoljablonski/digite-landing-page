@@ -498,12 +498,23 @@ article.why-us > p:nth-child(5) {
   padding: 1em;
 }
 
-.our-services .our-service:nth-of-type(1) i,
-.our-services .our-service:nth-of-type(2) i {
+.our-services .our-services-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.our-services .our-services-wrapper .our-service:nth-of-type(1) i,
+.our-services .our-services-wrapper .our-service:nth-of-type(2) i {
   font-size: 3em;
 }
 
-.our-services .our-service {
+.our-services .our-services-wrapper .our-service {
+  width: 90%;
   height: 120px;
   padding: 0.5em;
   display: -webkit-box;
@@ -516,31 +527,37 @@ article.why-us > p:nth-child(5) {
       justify-content: space-around;
 }
 
-.our-services .our-service i {
+.our-services .our-services-wrapper .our-service i {
   font-size: 2.5em;
   background: -webkit-linear-gradient(#286152, #c5ac1f);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 40%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: center;
   margin: 5px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
-.our-services .our-service i:active {
+.our-services .our-services-wrapper .our-service i:active {
   -webkit-transform: rotateX(360deg);
           transform: rotateX(360deg);
 }
 
-.our-services .our-service h3 {
+.our-services .our-services-wrapper .our-service div {
+  margin: 15px;
+}
+
+.our-services .our-services-wrapper .our-service div h3 {
   text-transform: uppercase;
   font-size: 1em;
   letter-spacing: 1px;
   padding: 1em 0 .5em 1.5em;
 }
 
-.our-services .our-service p {
+.our-services .our-services-wrapper .our-service div p {
   font-size: .9em;
   color: #666;
   line-height: 1.4;
