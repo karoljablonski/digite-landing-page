@@ -25,6 +25,15 @@ h2.content-h2 {
   color: #666;
 }
 
+@media (orientation: landscape) {
+  h1.content-h1 {
+    font-size: 1.3rem;
+  }
+  h2.content-h2 {
+    font-size: .9rem;
+  }
+}
+
 body {
   font-family: sans-serif;
   min-height: 200vh;
@@ -406,7 +415,7 @@ article.why-us > p:nth-child(5) {
 
 @media (orientation: landscape) {
   article.why-us p {
-    font-size: .9em;
+    font-size: .7em;
   }
 }
 
