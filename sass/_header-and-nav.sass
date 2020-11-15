@@ -59,6 +59,7 @@
                 text-decoration: none
                 color: #fff
                 border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+                cursor: pointer
                 &:active
                     color: $themecolor
                     background-color: #fff
@@ -163,3 +164,41 @@
         left: 70%
     .burger.active-hamburger
         right: 27%
+@media (min-width: 768px)
+    .main-nav
+        height: 15vh
+        .logo
+            left: 5%
+        .burger
+            display: none
+        .main-nav-ul
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            background-color: transparent
+            position: absolute
+            width: 65%
+            top: 0
+            left: 30%
+            height: 15vh
+            transition: 0.5s ease-in-out
+            overflow: hidden
+            li
+                list-style-type: none
+                text-align: center
+                height: 15vh
+
+                a
+                    height: auto
+                    line-height: 15vh
+                    font-size: 17px
+                    margin: 0
+                    display: block
+                    text-transform: capitalize
+                    text-decoration: none
+                    color: $themecolor
+                    border-bottom: none
+                    &:active, &:hover
+                        color: $gradientcolor
+    .main-header
+        height: 90vh

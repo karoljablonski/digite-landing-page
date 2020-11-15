@@ -34,7 +34,8 @@
                 margin: 5px;
                 transition: 0.7s;
 
-                &:active {
+                &:active,
+                &:hover {
                     transform: rotateX(360deg);
                     // transform-origin: 50%;
                 }
@@ -61,7 +62,7 @@
     }
 }
 
-@media (orientation: landscape) {
+@media (max-width: 767px) and (orientation: landscape) {
 
     .our-services {
 
@@ -81,6 +82,20 @@
 
             p {
                 padding-right: 70px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .our-services {
+        .our-services-wrapper {
+            height: 50vh;
+
+            .our-service {
+                width: 33%;
+                align-items: center;
+                align-content: center;
             }
         }
     }

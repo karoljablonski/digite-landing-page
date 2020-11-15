@@ -116,6 +116,7 @@
                 border: 1px solid $themecolor;
                 color: $themecolor;
                 font-weight: 100;
+                cursor: pointer;
 
                 &:hover {
                     background-color: $themecolor;
@@ -123,5 +124,11 @@
                 }
             }
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .our-pricing {
+        margin-bottom: 70px;
     }
 }

@@ -87,3 +87,16 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .our-testimonial {
+        padding-bottom: 70px;
+
+        .references-wrapper {
+            .single-refer {
+                width: 30%;
+                min-height: 40vh;
+            }
+        }
+    }
+}
