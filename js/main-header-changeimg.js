@@ -21,8 +21,9 @@ function changeElement(){
     h1.textContent = h1content[activeElement];
     h2.textContent = h2content[activeElement];
     //kod ponizej dziala!
-    // img.style.background = image[activeElement];
-    // img.style.backgroundSize = sizeValue;
-    // img.style.backgroundPosition = positionValue;
+    img.style.background = image[activeElement];
+    img.style.backgroundSize = sizeValue;
+    img.style.backgroundPosition = positionValue;
+    
 };
 setInterval(changeElement, timeChange)
