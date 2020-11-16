@@ -70,8 +70,9 @@
                     flex-basis: 120px
 @media (min-width: 768px)
     .data-contact
-        flex-diretion: row
+        flex-direction: row
         flex-wrap: nowrap
+        justify-content: space-around
         .contact-form
             flex-wrap: wrap
             input:nth-child(1), input:nth-child(2), input:nth-child(3)
@@ -79,6 +80,10 @@
                 margin: 0 20px
         .contact-info
             p
+                justify-content: space-around
+                width: 70%
+                margin: 0 auto
                 span:nth-child(2)
                     display: block
-                    width: 30%
+                    width: 50%
+                    flex-grow: 0

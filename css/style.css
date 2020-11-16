@@ -439,9 +439,12 @@ body {
     text-decoration: none;
     color: #286152;
     border-bottom: none;
+    font-weight: bold;
   }
   .main-nav .main-nav-ul li a:active, .main-nav .main-nav-ul li a:hover {
-    color: #c5ac1f;
+    color: #110b11;
+    background-color: transparent;
+    cursor: pointer;
   }
   .main-header {
     height: 90vh;
@@ -591,7 +594,7 @@ article.why-us > p:nth-child(5) {
 
 .our-services .our-services-wrapper .our-service i {
   font-size: 2.5em;
-  background: -webkit-linear-gradient(#286152, #c5ac1f);
+  background: -webkit-linear-gradient(#286152, #110b11);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1224,7 +1227,7 @@ section.contact-us button:focus {
 }
 
 .our-records .records-wrapper .record i {
-  background: -webkit-linear-gradient(#286152 30%, #c5ac1f);
+  background: -webkit-linear-gradient(#286152 30%, #110b11);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1608,6 +1611,7 @@ section.contact-us button:focus {
   margin: 30px auto 0;
   background-color: #fff;
   color: #286152;
+  text-align: center;
 }
 
 .newsletter button.sub:hover, .newsletter button.sub:focus {
@@ -1626,7 +1630,7 @@ section.contact-us button:focus {
     width: 30%;
   }
   .newsletter button.sub {
-    width: 10%;
+    width: 120px;
     text-align: center;
     padding: auto;
   }
@@ -1768,9 +1772,14 @@ section.contact-us button:focus {
 
 @media (min-width: 768px) {
   .data-contact {
-    flex-diretion: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .data-contact .contact-form {
     -ms-flex-wrap: wrap;
@@ -1780,9 +1789,18 @@ section.contact-us button:focus {
     width: 25%;
     margin: 0 20px;
   }
+  .data-contact .contact-info p {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+  }
   .data-contact .contact-info p span:nth-child(2) {
     display: block;
-    width: 30%;
+    width: 50%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
   }
 }
 

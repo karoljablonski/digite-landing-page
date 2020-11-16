@@ -48,6 +48,7 @@
         margin: 30px auto 0;
         background-color: #fff;
         color: $themecolor;
+        text-align: center;
 
         &:hover,
         &:focus {
@@ -72,7 +73,7 @@
         }
 
         button.sub {
-            width: 10%;
+            width: 120px;
             text-align: center;
             padding: auto
         }
