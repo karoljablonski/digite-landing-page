@@ -28,9 +28,11 @@ section.contact-us {
         text-transform: capitalize;
         border-radius: 30px;
         margin: 0 auto 0 auto;
+        cursor: pointer;
     }
 
-    button:focus {
+    button:focus,
+    button:hover {
         background-color: #fff;
         color: $themecolor;
     }

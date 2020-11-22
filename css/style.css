@@ -723,11 +723,10 @@ article.why-us > p:nth-child(5) {
 }
 
 .our-work .our-work-img-container .our-work-single-img {
+  position: relative;
   overflow: hidden;
   width: 90%;
   margin: 20px auto;
-  position: relative;
-  background-color: transparent;
 }
 
 .our-work .our-work-img-container .our-work-single-img > * {
@@ -735,22 +734,50 @@ article.why-us > p:nth-child(5) {
   transition: 1s;
 }
 
-.our-work .our-work-img-container .our-work-single-img img {
+.our-work .our-work-img-container .our-work-single-img .wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.our-work .our-work-img-container .our-work-single-img .wrap:hover ~ button, .our-work .our-work-img-container .our-work-single-img .wrap:active ~ button {
+  opacity: 1;
+}
+
+.our-work .our-work-img-container .our-work-single-img .wrap:hover ~ .animation-feature, .our-work .our-work-img-container .our-work-single-img .wrap:active ~ .animation-feature {
+  left: -150%;
+}
+
+.our-work .our-work-img-container .our-work-single-img .wrap:hover ~ .img-title, .our-work .our-work-img-container .our-work-single-img .wrap:hover ~ .img-desc, .our-work .our-work-img-container .our-work-single-img .wrap:active ~ .img-title, .our-work .our-work-img-container .our-work-single-img .wrap:active ~ .img-desc {
+  left: 50%;
+}
+
+.our-work .our-work-img-container .our-work-single-img .wrap:hover ~ img, .our-work .our-work-img-container .our-work-single-img .wrap:active ~ img, .our-work .our-work-img-container .our-work-single-img .wrap:target {
+  -webkit-filter: brightness(25%);
+          filter: brightness(25%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.our-work .our-work-img-container .our-work-single-img img {
   display: block;
+  width: 100%;
 }
 
 .our-work .our-work-img-container .our-work-single-img button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 7%;
+  right: 12%;
   height: 30px;
   width: 30px;
   border-radius: 50%;
   border: none;
   background-color: #286152;
   color: white;
-  z-index: 3;
   font-size: 1.3em;
   text-align: center;
   opacity: 0;
@@ -758,39 +785,35 @@ article.why-us > p:nth-child(5) {
 
 .our-work .our-work-img-container .our-work-single-img .img-title {
   position: absolute;
-  top: 0;
-  left: -100%;
+  top: 30%;
+  left: -50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
-  padding-top: 20%;
   color: white;
   font-weight: 900;
   text-transform: uppercase;
-  width: 100%;
-  height: 100%;
   font-size: 1.2em;
-  z-index: 2;
 }
 
 .our-work .our-work-img-container .our-work-single-img .img-desc {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-transform: capitalize;
   color: white;
-  z-index: 2;
-  opacity: 0;
+  opacity: 1;
 }
 
 .our-work .our-work-img-container .our-work-single-img .animation-feature {
   position: absolute;
   top: 0;
-  left: 130%;
+  left: 135%;
   width: 70%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
   border: 3px solid #286152;
   -webkit-transform: skew(35deg);
           transform: skew(35deg);
@@ -854,9 +877,11 @@ section.contact-us button {
   text-transform: capitalize;
   border-radius: 30px;
   margin: 0 auto 0 auto;
+  cursor: pointer;
 }
 
-section.contact-us button:focus {
+section.contact-us button:focus,
+section.contact-us button:hover {
   background-color: #fff;
   color: #286152;
 }
