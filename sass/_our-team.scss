@@ -29,6 +29,30 @@
             background-image: url(../img/ourteam-4.jpg);
         }
 
+        .wrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            z-index: 2;
+
+            &:hover~.emp-name {
+                height: 100px;
+            }
+
+            &:hover~.emp-position {
+                opacity: 1;
+                bottom: 25px;
+            }
+
+            &:hover~.emp-socials {
+                opacity: 1;
+                margin-bottom: 0;
+            }
+        }
+
         .emp-name {
             position: absolute;
             left: 0;
@@ -41,37 +65,23 @@
             font-size: 1.1em;
             color: white;
             transition: 0.4s;
-
-            // &:hover {
-            //     height: 120px;
-            // }
         }
-
-
 
         .emp-position {
-            display: none;
             transition: 0.4s;
-        }
-
-        .emp-position-active {
             color: white;
-            z-index: 1;
+            // z-index: 1;
             text-align: center;
             font-size: 0.9em;
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 45px;
-            transition: .4s;
+            bottom: 0px;
+            transition: .3s;
+            opacity: 0;
         }
 
         .emp-socials {
-            display: none;
-            transition: 0.4s;
-        }
-
-        .emp-socials-active {
             position: absolute;
             left: 25%;
             right: 25%;
@@ -81,24 +91,37 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            transition: .4s;
+            transition: 0.4s;
+            opacity: 0;
+            margin-bottom: 20px;
+
 
             .emp-social {
+                position: relative;
                 display: block;
-                // padding: 2px;
-                width: 35px;
-                height: 35px;
+                width: 30px;
+                height: 30px;
                 text-align: center;
-                line-height: 35px;
-                font-size: 20px;
+                // line-height: 20px;
                 border-radius: 50%;
                 background-color: white;
                 color: $themecolor;
-                border: .1px solid $themecolor;
+                // border: .1px solid $themecolor;
+                box-shadow: 1px 2px #eee;
+
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 15px;
+                }
             }
         }
     }
 }
+
 
 @media (orientation: landscape) {
     .stuff-container {
@@ -108,6 +131,11 @@
             width: 48%;
             height: 80vh;
             margin: 0 auto 40px;
+
+            .emp-socials {
+                left: 20%;
+                right: 20%;
+            }
         }
     }
 }
@@ -121,6 +149,11 @@
             height: 60vh;
             margin: 0 auto 40px;
             background-position: center;
+
+            .emp-socials {
+                left: 15%;
+                right: 15%;
+            }
         }
     }
 }

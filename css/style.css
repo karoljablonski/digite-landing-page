@@ -930,6 +930,30 @@ section.contact-us button:hover {
   background-image: url(../img/ourteam-4.jpg);
 }
 
+.stuff-container .single-employee .wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+
+.stuff-container .single-employee .wrap:hover ~ .emp-name {
+  height: 100px;
+}
+
+.stuff-container .single-employee .wrap:hover ~ .emp-position {
+  opacity: 1;
+  bottom: 25px;
+}
+
+.stuff-container .single-employee .wrap:hover ~ .emp-socials {
+  opacity: 1;
+  margin-bottom: 0;
+}
+
 .stuff-container .single-employee .emp-name {
   position: absolute;
   left: 0;
@@ -946,31 +970,21 @@ section.contact-us button:hover {
 }
 
 .stuff-container .single-employee .emp-position {
-  display: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-.stuff-container .single-employee .emp-position-active {
   color: white;
-  z-index: 1;
   text-align: center;
   font-size: 0.9em;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 45px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  bottom: 0px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
 }
 
 .stuff-container .single-employee .emp-socials {
-  display: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.stuff-container .single-employee .emp-socials-active {
   position: absolute;
   left: 25%;
   right: 25%;
@@ -984,21 +998,32 @@ section.contact-us button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  margin-bottom: 20px;
 }
 
-.stuff-container .single-employee .emp-socials-active .emp-social {
+.stuff-container .single-employee .emp-socials .emp-social {
+  position: relative;
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   text-align: center;
-  line-height: 35px;
-  font-size: 20px;
   border-radius: 50%;
   background-color: white;
   color: #286152;
-  border: 0.1px solid #286152;
+  -webkit-box-shadow: 1px 2px #eee;
+          box-shadow: 1px 2px #eee;
+}
+
+.stuff-container .single-employee .emp-socials .emp-social i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 15px;
 }
 
 @media (orientation: landscape) {
@@ -1009,6 +1034,10 @@ section.contact-us button:hover {
     width: 48%;
     height: 80vh;
     margin: 0 auto 40px;
+  }
+  .stuff-container .single-employee .emp-socials {
+    left: 20%;
+    right: 20%;
   }
 }
 
@@ -1021,6 +1050,10 @@ section.contact-us button:hover {
     height: 60vh;
     margin: 0 auto 40px;
     background-position: center;
+  }
+  .stuff-container .single-employee .emp-socials {
+    left: 15%;
+    right: 15%;
   }
 }
 
