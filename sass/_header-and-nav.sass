@@ -79,8 +79,8 @@
     background-position: center
     background-blend-mode: darken
     transition: .4s
+    //wylaczona animacja bo lepiej dziala JS :D
     // animation: switch-header 8s linear infinite
-    // animation: switch-header-opacity-test 4000ms linear infinite
     &>*
         position: absolute
         width: 100%
@@ -117,15 +117,6 @@
         &:active
             background-color: $themecolor
             border-color: $themecolor
-@keyframes switch-header-opacity-test
-    // 0%
-    //     opacity: 0.2
-    10%
-        opacity: 1
-    90%
-        opacity: 1
-    // 100%
-    //     opacity: 0.2
 @keyframes switch-header
     0%
         opacity: 0

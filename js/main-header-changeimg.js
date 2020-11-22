@@ -9,7 +9,7 @@ const img = document.querySelector(".main-header");
 //wpisanie do zmiennych tablic z elem. do zmiany
 const h1content = ["we have a creative team", "we build amazing webpages"];
 const h2content = ["Lorem ipsum dolor sit amet consectetur adipisicing elit.", "Sint modi eligendi consequuntur natus, perspiciatis deserunt."]
-const image = ["rgba(0, 0, 0, 0.5) url(/img/header-1.jpg)", "rgba(0, 0, 0, 0.5) url(/img/header-2.jpg)"];
+const image = ["rgba(0, 0, 0, 0.5) url('img/header-1.jpg') no-repeat center", "rgba(0, 0, 0, 0.5) url('img/header-2.jpg') no-repeat center"];
 const sizeValue = 'cover';
 const positionValue = 'center';
 //funkcja powoduje: kolejne wywolanie zwieksza aE o 1, wpisując kolejne indeksy z tablic, gdy aE osiaga .length - zeruje się aE i w kók
@@ -23,7 +23,7 @@ function changeElement(){
     //kod ponizej dziala!
     img.style.background = image[activeElement];
     img.style.backgroundSize = sizeValue;
-    img.style.backgroundPosition = positionValue;
+    // img.style.backgroundPosition = positionValue;
     
 };
 setInterval(changeElement, timeChange)
