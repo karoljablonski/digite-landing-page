@@ -1072,21 +1072,20 @@ section.contact-us button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.client-logos .logos-wrapper {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
   overflow-x: hidden;
 }
 
-.client-logos .logos-wrapper .client-logo {
-  margin: 0 35px;
-  background-size: cover;
+.client-logos img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  padding: 0 100px;
+  -webkit-animation: moveYourAss 120s linear infinite both;
+          animation: moveYourAss 120s linear infinite both;
 }
 
 @media (orientation: landscape) {
@@ -1100,8 +1099,29 @@ section.contact-us button:hover {
     height: 25vh;
     margin: 70px 0;
   }
-  .client-logos .logos-wrapper .client-logo {
-    margin: 0 100px;
+}
+
+@-webkit-keyframes moveYourAss {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -150%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes moveYourAss {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -150%;
+  }
+  100% {
+    left: 0;
   }
 }
 

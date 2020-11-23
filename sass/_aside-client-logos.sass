@@ -3,18 +3,16 @@
     background-color: #ccc
     display: flex
     align-items: center
-    // overflow: hidden
-    .logos-wrapper
-        display: inline-flex
-        align-items: center
-        overflow-x: hidden //UWAZAC NA TO SZCZEGOLNIE PRZY IMPLEMENTACJI JS!!!!
-
-        .client-logo
-            margin: 0 35px
-            background-size: cover
-            // background-color: red
-            img
-                // width: 100%
+    position: relative
+    overflow-x: hidden
+    img
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        right: 0
+        padding: 0 100px
+        animation: moveYourAss 120s linear infinite both
 @media (orientation: landscape)
     .client-logos
         height: 40vh
@@ -22,6 +20,10 @@
     .client-logos
         height: 25vh
         margin: 70px 0
-        .logos-wrapper
-            .client-logo
-                margin: 0 100px
+@keyframes moveYourAss
+    0%
+        left: 0
+    50%
+        left: -150%
+    100%
+        left: 0
