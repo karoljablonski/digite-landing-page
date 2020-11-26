@@ -3,26 +3,69 @@
     background-color: #eee;
     padding-bottom: 50px;
     padding-top: 10px;
+    overflow: hidden;
+
+    &>* {
+        transition: 0.5s;
+    }
+
+    .ref-wrap {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 70vh;
+        overflow: hidden;
+
+
+        button {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: $themecolor;
+            color: white;
+            border: 0px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            z-index: 5;
+            top: 50%;
+        }
+
+        button.switchRight {
+            left: calc(100vw - 30px);
+        }
+
+        button.switchLeft {
+            left: 5px;
+        }
+    }
 
     .references-wrapper {
-        // height: 200vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        height: 60vh;
+        position: relative;
+        display: inline-flex;
+        // width: 800vw;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: center;
         align-items: center;
+        // background-color: red;
+
 
         .single-refer {
-            width: 70%;
+            width: 80vw;
             min-height: 50vh;
             position: relative;
-            top: auto;
-            left: auto;
+            // top: auto;
+            // left: auto;
             background-color: #fff;
             border-top: 2px solid $themecolor;
-            margin: 50px auto;
+            margin: 0 10vw 0 10vw;
             padding: 10px;
             display: flex;
             flex-direction: column;
+
 
             .text-refer {
                 width: 90%;
@@ -69,19 +112,28 @@
 
 @media (orientation: landscape) {
     .our-testimonial {
-        .references-wrapper {
-            width: 90%;
-            margin: 0 auto;
-            align-items: space-around;
-            align-content: center;
+        .ref-wrap {
+            width: 100%;
 
-            .single-refer {
-                width: 48%;
-                min-height: 72vh;
-                margin: 40px 0;
+            button {
 
-                .text-refer {
-                    font-size: 90%;
+                top: 40%;
+            }
+
+
+            .references-wrapper {
+                height: 50vh;
+
+
+                .single-refer {
+                    width: 60vw;
+                    max-height: 45vh;
+                    margin: 0 20vw;
+
+                    .text-refer {
+                        font-size: .8em;
+                    }
+
                 }
             }
         }
@@ -90,12 +142,80 @@
 
 @media (min-width: 768px) {
     .our-testimonial {
-        padding-bottom: 70px;
+        padding-bottom: 10px;
 
-        .references-wrapper {
-            .single-refer {
-                width: 30%;
-                min-height: 40vh;
+        .ref-wrap {
+            width: 100%;
+
+            button {
+                top: 35%;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            button.switchLeft {
+                left: 5%;
+            }
+
+            button.switchRight {
+                left: 93%;
+            }
+
+
+
+            .references-wrapper {
+                height: 50vh;
+
+
+                .single-refer {
+                    width: 30vw;
+                    max-height: 45vh;
+                    margin: 0 10vw;
+
+                    .text-refer {
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .our-testimonial {
+        .ref-wrap {
+            width: 90vw;
+            margin: 0 auto;
+
+            button {
+                top: 35%;
+                line-height: 40px;
+                width: 40px;
+                height: 40px;
+            }
+
+            button.switchLeft {
+                left: 2%;
+            }
+
+            button.switchRight {
+                left: 95%;
+            }
+
+            .references-wrapper {
+                height: 50vh;
+
+                .single-refer {
+                    width: 30vw;
+                    max-height: 45vh;
+                    margin: 0 calc(30vw/4);
+
+                    .text-refer {
+                        font-size: 1.2em;
+                    }
+
+                }
             }
         }
     }

@@ -1369,30 +1369,63 @@ section.contact-us button:hover {
   background-color: #eee;
   padding-bottom: 50px;
   padding-top: 10px;
+  overflow: hidden;
+}
+
+.our-testimonial > * {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.our-testimonial .ref-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.our-testimonial .ref-wrap button {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #286152;
+  color: white;
+  border: 0px;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  z-index: 5;
+  top: 50%;
+}
+
+.our-testimonial .ref-wrap button.switchRight {
+  left: calc(100vw - 30px);
+}
+
+.our-testimonial .ref-wrap button.switchLeft {
+  left: 5px;
 }
 
 .our-testimonial .references-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  height: 60vh;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .our-testimonial .references-wrapper .single-refer {
-  width: 70%;
+  width: 80vw;
   min-height: 50vh;
   position: relative;
-  top: auto;
-  left: auto;
   background-color: #fff;
   border-top: 2px solid #286152;
-  margin: 50px auto;
+  margin: 0 10vw 0 10vw;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1444,32 +1477,84 @@ section.contact-us button:hover {
 }
 
 @media (orientation: landscape) {
-  .our-testimonial .references-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    -webkit-box-align: space-around;
-        -ms-flex-align: space-around;
-            align-items: space-around;
-    -ms-flex-line-pack: center;
-        align-content: center;
+  .our-testimonial .ref-wrap {
+    width: 100%;
   }
-  .our-testimonial .references-wrapper .single-refer {
-    width: 48%;
-    min-height: 72vh;
-    margin: 40px 0;
+  .our-testimonial .ref-wrap button {
+    top: 40%;
   }
-  .our-testimonial .references-wrapper .single-refer .text-refer {
-    font-size: 90%;
+  .our-testimonial .ref-wrap .references-wrapper {
+    height: 50vh;
+  }
+  .our-testimonial .ref-wrap .references-wrapper .single-refer {
+    width: 60vw;
+    max-height: 45vh;
+    margin: 0 20vw;
+  }
+  .our-testimonial .ref-wrap .references-wrapper .single-refer .text-refer {
+    font-size: .8em;
   }
 }
 
 @media (min-width: 768px) {
   .our-testimonial {
-    padding-bottom: 70px;
+    padding-bottom: 10px;
   }
-  .our-testimonial .references-wrapper .single-refer {
-    width: 30%;
-    min-height: 40vh;
+  .our-testimonial .ref-wrap {
+    width: 100%;
+  }
+  .our-testimonial .ref-wrap button {
+    top: 35%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .our-testimonial .ref-wrap button.switchLeft {
+    left: 5%;
+  }
+  .our-testimonial .ref-wrap button.switchRight {
+    left: 93%;
+  }
+  .our-testimonial .ref-wrap .references-wrapper {
+    height: 50vh;
+  }
+  .our-testimonial .ref-wrap .references-wrapper .single-refer {
+    width: 30vw;
+    max-height: 45vh;
+    margin: 0 10vw;
+  }
+  .our-testimonial .ref-wrap .references-wrapper .single-refer .text-refer {
+    font-size: .8em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .our-testimonial .ref-wrap {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .our-testimonial .ref-wrap button {
+    top: 35%;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+  }
+  .our-testimonial .ref-wrap button.switchLeft {
+    left: 2%;
+  }
+  .our-testimonial .ref-wrap button.switchRight {
+    left: 95%;
+  }
+  .our-testimonial .ref-wrap .references-wrapper {
+    height: 50vh;
+  }
+  .our-testimonial .ref-wrap .references-wrapper .single-refer {
+    width: 30vw;
+    max-height: 45vh;
+    margin: 0 calc(30vw/4);
+  }
+  .our-testimonial .ref-wrap .references-wrapper .single-refer .text-refer {
+    font-size: 1.2em;
   }
 }
 
@@ -1859,6 +1944,7 @@ section.contact-us button:hover {
 
 @media (min-width: 768px) {
   .data-contact {
+    overflow: hidden;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
